@@ -1,0 +1,60 @@
+/* manage_devices.css */
+
+/* تنسيق الجسم بشكل عام */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+}
+
+/* تنسيق العنوان */
+h1 {
+    color: #005c39;
+    font-size: 2.5rem;
+}
+
+/* تنسيق النموذج */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الحقول داخل النموذج */
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* تنسيق الأزرار */
+.btn {
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+/* تنسيق الأزرار عند التمرير */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* تنسيق قائمة الأجهزة */
+ul.list-group {
+    margin-top: 20px;
+}
+
+/* تنسيق عناصر القائمة */
+li.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* تنسيق الهامش */
+.mt-4 {
+    margin-top: 30px;
+}

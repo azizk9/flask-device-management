@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Device</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Edit Device</h1>
+
+        <form action="{{ url_for('edit_device', device_id=device.id) }}" method="POST">
+            <div class="form-group">
+                <label for="name">Device Name</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ device.name }}" required>
+            </div>
+            <div class="form-group">
+                <label for="ip">IP Address</label>
+                <input type="text" class="form-control" id="ip" name="ip" value="{{ device.ip }}" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select class="form-control" id="status" name="status" required>
+                    <option value="active" {% if device.status == 'active' %} selected {% endif %}>Active</option>
+                    <option value="inactive" {% if device.status == 'inactive' %} selected {% endif %}>Inactive</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Device</button>
+        </form>
+    </div>
+</body>
+</html>

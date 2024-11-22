@@ -1,0 +1,52 @@
+/* index.css */
+
+/* تنسيق الجسم بشكل عام */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+}
+
+/* تنسيق العنوان */
+h1 {
+    color: #005c39;
+    font-size: 2.5rem;
+}
+
+/* تنسيق الجدول */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* تنسيق الصفوف داخل الجدول */
+th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: #8e5ba2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* تنسيق الأزرار */
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* تنسيق الأزرار عند التمرير */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* تنسيق الهامش */
+.mt-4 {
+    margin-top: 30px;
+}
